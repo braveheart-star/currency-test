@@ -46,9 +46,9 @@ const ExchangeModal = () => {
       setConvertRate(res.data.data);
     });
   }
-  // useEffect(() => {
-  //   fetchConvertRate();
-  // }, []);
+  useEffect(() => {
+    fetchConvertRate();
+  }, []);
 
   useEffect(() => {
     if (reduceAmount) {
