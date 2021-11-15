@@ -52,18 +52,13 @@ const ExchangeModal = () => {
 
   useEffect(() => {
     if (reduceAmount) {
-      console.log(
-        "rate ----> ",
-        currencyConvert[reduceWallet.value] /
-          currencyConvert[increaseWallet.value]
-      );
       setIncreaseAmount(
         (Number(reduceAmount.slice(1)) *
           currencyConvert[increaseWallet.value]) /
           currencyConvert[reduceWallet.value]
       );
     }
-  }, [reduceWallet, increaseWallet]);
+  }, [reduceWallet, increaseWallet, reduceAmount, currencyConvert]);
 
   const handleConvertCurrency = () => {
     const reduceWalletCurrency = reduceWallet.value;
