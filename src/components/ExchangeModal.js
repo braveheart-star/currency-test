@@ -58,7 +58,8 @@ const ExchangeModal = () => {
           currencyConvert[reduceWallet.value]
       );
     }
-  }, [reduceWallet, increaseWallet, reduceAmount, currencyConvert]);
+    // eslint-disable-next-line
+  }, [reduceWallet, increaseWallet, reduceAmount]);
 
   const handleConvertCurrency = () => {
     const reduceWalletCurrency = reduceWallet.value;
