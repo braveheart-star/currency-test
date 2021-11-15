@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## deployed live demo
 
+https://currency-test.vercel.app/
+
 In the project directory, you can run:
 
 ### `yarn start`
